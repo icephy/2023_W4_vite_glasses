@@ -1,7 +1,7 @@
 // banner 區塊
 
 .banner{
-  background-image: url(https://raw.githubusercontent.com/icephy/2023_W3_glasses/main/img/home-header.png);
+  background-image: url(../images/home-header.png);
   background-size: cover;
 }
 
@@ -133,7 +133,7 @@
   // (.container 寬度算法：696+(36*2)= max-width: 768px)
 
   .banner{
-      background-image: url(https://raw.githubusercontent.com/icephy/2023_W3_glasses/main/img/home-header-sm.png);
+      background-image: url(../images/home-header-sm.png);
   }
 
   .ad-slogan{
