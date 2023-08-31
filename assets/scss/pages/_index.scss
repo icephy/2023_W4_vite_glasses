@@ -1,0 +1,245 @@
+// banner 區塊
+
+.banner{
+  background-image: url(https://raw.githubusercontent.com/icephy/2023_W3_glasses/main/img/home-header.png);
+  background-size: cover;
+}
+
+.ad-slogan{
+  width: 50%;
+  margin-left: auto;
+}
+// .ad-slogan 這個用 margin-left: auto; 的容器可以如何管理在容器工具裡
+
+.ad-sl-t{
+  font-size: $text-lg;
+  color: $secondary;
+}
+
+.btn-sm{
+  max-width: 104px;
+  background-color: $primary;
+  margin-left: auto;
+  a{
+      padding: 6px 12px;
+      text-align: center;
+      color: $neutral-gary-wh;
+      font-size: $text-s;
+      &:hover{
+          background-color: $neutral-gary-wh;
+          color: $primary;
+          transition: 0.2s;
+          font-weight: bold;
+      }
+  }
+}
+
+// Service 區塊
+
+.service{
+  background-color: $tertiary;
+
+  span{
+      display: block;
+  }
+  p{
+      font-size: $text-xs;
+      color: $neutral-gary-bk;
+  }
+
+}
+
+.feature{
+  display: flex;
+  justify-content: space-between;
+}
+
+// 經典樣式商品區塊
+
+.classic-product{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.series-1-bg-mobile, .series-2-bg-mobile{
+  display: none;
+}
+
+.feedback{
+  gap: 24px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.fb-date{
+  font-size: $text-xxs;
+  color: $neutral-gary-dr;
+}
+
+// 聯絡區塊
+
+.contact{
+  background-color: $tertiary;
+  .container{
+      max-width: 636px;
+  }
+  // 這邊是 660px 是因為 636px+24px 兩邊 padding，但是不確定是要另外寫一個 660 的容器，還是用 .container，並且依附在 .contact 下寫出 scss 來覆蓋前面的 .container max-width 寬度。
+}
+
+.btn-xl{
+  max-width: 416px;
+  margin: 0 auto;
+}
+
+.btn-xl-primary{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: $primary;
+  color: $neutral-gary-wh;
+  font-weight: bold;
+  &:hover{
+      background-color: $secondary;
+      transition: 0.2s;
+  }
+}
+
+
+.btn-submit{
+  font-size: $text-xs;
+  font-weight: bold;
+  font-family: $noto-sans-tc;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: $primary;
+  color: $neutral-gary-wh;
+  font-weight: bold;
+  border: none;
+  &:hover{
+      background-color: $secondary;
+      transition: 0.2s;
+  }
+  // 發覺用 input 做的傳送按鈕，裡面的字型、大小樣式等都需要重新設定，不會吃到 body 寫好的全域設定，如此一來，傳送表格的「送出」按鈕，應該使用 <input> 還是 <div> 來製作呢
+}
+
+// 平板樣式
+
+@media (max-width: 992px){
+  .container{
+      max-width: 768px; 
+      padding-left: 36px;
+      padding-right: 36px;
+  }
+  // (.container 寬度算法：696+(36*2)= max-width: 768px)
+
+  .banner{
+      background-image: url(https://raw.githubusercontent.com/icephy/2023_W3_glasses/main/img/home-header-sm.png);
+  }
+
+  .ad-slogan{
+      width: 100%;
+  }
+
+  .feature{
+      flex-wrap: wrap;
+  }
+
+  .special-series{
+      flex-wrap: wrap;
+      gap: 32px;
+  }
+
+  .col-4{
+      width: 50%;
+      margin-bottom: 24px;
+  }
+
+  .col-6{
+      width: 100%;
+  }
+
+  .classic-product{
+      flex-direction: column;
+  }
+
+  .feedback{
+      flex-wrap: wrap;
+      gap: 24px;
+  }
+  .col-3{
+      width: 48%;
+  }
+
+  .contact{
+      .container{
+          max-width: 648px;
+      }
+      // 這邊設為 max-width: 648px; 是因爲設計稿上的寬度是「576px」，而在平板時，.container 左右兩邊的 padding 是各為 36px，因此算法為：576px+(36px*2)= 648px，這樣子在 box-sizing: border-box 下實際寬度才會是 576px。
+  }
+}
+
+
+// 手機樣式
+
+@media (max-width: 767px){
+  .container{
+      max-width: 372px;
+      padding-left: 12px;
+      padding-right: 12px;
+  }
+
+  .ad-slogan{
+      padding: 144px 0;
+  }
+  // 像這種在桌機套用了 .ptb-296 的樣式，在手機版要更換其他間距值時如何管理呢？
+  // 如果在首頁時的手機版 .ptb-296 要換成 .ptb-144，而在商品頁要為 .ptb-100，那該如何管理呢
+
+  .ad-sl-t{
+      font-size: $text-xs;
+  }
+
+  .h2{
+      font-size: $text-m;
+  }
+
+  .h3{
+      font-size: $text-m;
+  }
+  // .h2 .h3 文字在不同裝置下變大變小時，可以如何管理覆蓋權重的 CSS
+
+  .feature{
+      flex-direction: column;
+  }  
+
+  .col-4{
+      width: 100%;
+  }
+
+  .ptb-80{
+      padding-top: 40px;
+      padding-bottom: 40px;
+  }
+  // 推出間距用的 .ptb-80 class 套用在不同的 div 時，同時需要在平板上顯現不同樣的間距時，可以如何管理 CSS 呢？直接在手機版上另外設置間距數值嗎？
+
+  .series-1-bg-desktop, .series-2-bg-desktop{
+      display: none;
+  }
+
+  .series-1-bg-mobile, .series-2-bg-mobile{
+      display: block;
+  }
+
+  .feedback{
+      flex-wrap: wrap;
+      gap: 16px;
+  }
+  .col-3{
+      width: 100%;
+  }
+  .contact{
+      .container{
+          max-width: 372px;
+      }
+  }
+
+}

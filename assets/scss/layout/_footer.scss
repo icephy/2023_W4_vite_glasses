@@ -1,4 +1,82 @@
+// Footer 區塊
+
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  background-color: $primary;
+}
+
+.social-icon{
+  max-width: 48px;
+}
+
+.f-info{
+  span{
+      display: block;
+  }
+}
+
+.copyright{
+  p{
+      font-family: $roboto;
+      color: $neutral-gary-wh;
+  }
+}
+
+
+// 平板樣式
+@media (max-width: 992px){
+
+  .footer{
+    .gap-32{
+        gap: 16px;
+    }
+  }
+
+  .f-nav{
+    display: none;
+  }
+
+}
+
+// 手機樣式
+
+@media (max-width: 767px){
+  .container{
+      max-width: 372px;
+      padding-left: 12px;
+      padding-right: 12px;
+  }
+
+  .footer{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+  .social-icon{
+      max-width: 24px;
+  }
+
+  .icon-48{
+      font-size: 24px;
+  }
+
+  .info-link{
+      font-size: $text-xs;
+  }
+  .f-info{
+      padding-bottom: 24px;
+  } 
+
+  .copyright{
+      padding-top: 16px;
+      flex-direction: column;
+      p{
+          margin-bottom: 8px;
+      }
+  }
+
+  .policy{
+      flex-direction: column;
+      gap: 8px;
+  }
+  
 }
