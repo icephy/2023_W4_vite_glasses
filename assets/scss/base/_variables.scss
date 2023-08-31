@@ -1,0 +1,162 @@
+// Variables
+
+// 顏色系統 Color system
+
+$primary: #AA0601;
+$secondary: #650300;
+$tertiary: #FBF2F2;
+$neutral-gary-wh: #FFFFFF;
+$neutral-gary-lh: #DEE2E6;
+$neutral-gary-dr: #707070;
+$neutral-gary-bk: #000000;
+$opacity: rgba(0, 0, 0, 0.1608);
+
+// 字級變數 Fonts
+
+$text-xxl: 64px;
+$text-xl: 48px;
+$text-lg: 36px;
+$text-m: 24px;
+$text-s: 20px;
+$text-xs: 16px;
+$text-xxs: 14px;
+
+// 字型 Font family 
+
+$roboto: 'Roboto', sans-serif;
+$noto-sans-tc: 'Noto Sans TC', sans-serif;
+
+// h1~h6 設定
+
+.h2{
+    font-size: $text-xxl;
+    color: $secondary;
+    font-weight: bold;
+}
+
+.h3{
+    font-size: $text-xl;
+    color: $secondary;
+    font-weight: bold;
+}
+
+.h4{
+    font-size: $text-m;
+    color: $secondary;
+    font-weight: bold;
+}
+
+// 文字對齊設定
+
+.tac{
+    text-align: center;
+}
+
+.tar{
+    text-align: right;
+}
+
+
+// 文字顏色套入
+
+.t-wh{
+    color: $neutral-gary-wh;
+}
+
+.t-bk{
+    color: $neutral-gary-bk;
+}
+
+
+// 圖片 Hover
+
+.hover-op:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+// 字型 Hover
+
+.italic-t{
+    font-family: $roboto;
+    font-size: $text-xl;
+    color: $primary;
+    font-style: italic;
+    font-weight: 900;
+    &:hover{
+        color: $secondary;
+        transition: 0.2s;
+    }
+}
+// 兩個相同字型樣式設定，卻有 hover 效果不同，另一個滑過時背景出現變化，這樣的情境如何管理 CSS
+
+.underline-hover{
+    border-bottom: 3px solid $primary;
+    font-size: $text-xs;
+    color: $neutral-gary-wh;
+    &:hover{
+        transition: ease-in-out 0.1s;
+        border-bottom: 3px solid $neutral-gary-wh;
+    }    
+}
+
+.info-link{
+    font-size: $text-lg;
+    color: $neutral-gary-wh;
+    &:hover{
+        opacity: 0.8;
+        transition: ease-in-out 0.1s;
+    }
+}
+
+.policy-link{
+    font-size: $text-xxs;
+    color: $neutral-gary-wh;
+    &:hover{
+        opacity: 0.8;
+        transition: ease-in-out 0.1s;
+    }
+}
+
+.hover-bg-wh-to-bk{
+    background-color: $neutral-gary-wh;
+    &:hover{
+        background-color: $neutral-gary-bk;
+    }
+}
+
+// border 邊框樣式
+
+.br-gary{
+    border-width: 0px 1px 1px 1px;
+    border-style: solid solid solid solid;
+    border-color: $neutral-gary-lh;
+}
+
+.br-white{
+    border-top: 1px solid $neutral-gary-wh;
+}
+
+// 圓角樣式
+
+.rd-b-rltb{
+    border-radius: 4px;
+}
+
+.rd-b-rl{
+    border-radius: 0px 0px 4px 4px;
+}
+
+// 陰影樣式
+
+.sd-bk-op-80{
+    box-shadow: 0px 0px 8px 0px rgb(0, 0, 0, 0.2);
+}
+
+
+// 背景容器
+
+.full-bg{
+    background-image: url(https://github.com/icephy/2023_W3_glasses/blob/main/img/index-bg.png?raw=true);
+    background-size: cover;
+}

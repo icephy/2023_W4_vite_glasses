@@ -1,0 +1,62 @@
+// Flexbox
+
+.d-flex{
+    display: flex;
+}
+
+.jcsb{
+    justify-content: space-between;
+}
+
+.aic{
+    align-items: center;
+}
+
+.aifs{
+    align-items: flex-start;
+}
+
+.aibl{
+    align-items: baseline;
+}
+
+.fxdc{
+    flex-direction: column;
+}
+
+// 排版容器
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.3333%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+
+.px-12{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.row{
+    margin-left: -12px;
+    margin-right: -12px;
+    display: flex;
+}

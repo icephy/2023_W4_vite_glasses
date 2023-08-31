@@ -1,4 +1,107 @@
+// 桌機 header 區塊
+
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+  background-color: $primary;
+  .logo a{
+      background-image: url(https://github.com/icephy/2023_W3_glasses/blob/main/img/logo-white.png?raw=true);
+      background-size: cover;
+      width: 80px;
+      height: 50px;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+  }
+
+  @media(max-width: 767px){
+      .container{
+          padding-left: 0;
+          padding-right: 0;
+          max-width: 100%;
+      }
+  }
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.nav{
+  font-size: $text-s;
+  gap: 64px;   
+}
+
+.nav-item{
+  a{
+      color: $neutral-gary-wh;
+      &:hover{
+          opacity: 0.8;
+          transition: ease-in-out 0.1s;
+      }
+      &:active{
+          color: $neutral-gary-wh;
+      }
+  }
+
+}
+
+
+// 平板樣式
+
+@media (max-width: 992px){
+  .container{
+      max-width: 768px; 
+      padding-left: 36px;
+      padding-right: 36px;
+  }
+  // (.container 寬度算法：696+(36*2)= max-width: 768px)
+
+}
+
+// 手機樣式
+
+@media (max-width: 767px){
+  .container{
+      max-width: 372px;
+      padding-left: 12px;
+      padding-right: 12px;
+  }
+  .header{
+      padding-top: 0;
+      padding-bottom: 0;
+  }
+
+  .nav-bar{
+      flex-direction: column;
+  }
+
+  .logo{
+      width: 100%;
+      padding: 16px 12px;
+  }
+  
+  .nav{
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 0%;
+  }
+
+  .nav-item{
+      width: 50%;
+      a{
+          width: 100%;
+          padding: 12px 0px;
+          outline: 1px solid #fff;
+          text-align: center;
+      }
+      &:hover{
+          background-color: $secondary;
+          transition: 0.2s;
+      }
+      &:active{
+          background-color: $secondary;
+      }
+  }
 }

@@ -1,0 +1,20 @@
+// 全站樣式 CSS base，全站樣式通常使用在 HTML 標籤上
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $noto-sans-tc;
+    line-height: 1.5;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;    
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}

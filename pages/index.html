@@ -4,18 +4,181 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>W4-Vite-眼鏡形象官網</title>
+    <!-- Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- Icons
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet"> -->
   </head>
   <body>
     <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">我是首頁</h1>
-    <h2>測試</h2>
-    <h3>新增內容並且推上去</h3>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
-
+    <!-- <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat"> -->
+    <div class="banner">
+        <div class="container">
+            <div class="ad-slogan tar ptb-296">
+                <p class="ad-sl-t">Promise-Desert 2020 早春系列</p>
+                <h2 class="h2 mb-4">看得清，才能看得遠</h2>
+                <div class="btn-sm">
+                    <a href="#">立即購買</a>
+                </div>
+            </div>
+        </div>
+    </div><!--banner-->
+    <div class="service">
+        <div class="container ptb-80">
+            <h3 class="h3 tac">用專業的心，做專業的事</h3>
+            <ul class="feature row">
+                <li class="col-4 px-12">
+                    <span class="material-symbols-outlined icon-100 tac ptb-24">
+                        monetization_on
+                    </span>
+                    <h4 class="h4 tac mb-4">單一價格</h4>
+                    <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+                </li>
+                <li class="col-4 px-12">
+                    <span class="material-symbols-outlined icon-100 tac ptb-24">
+                        schedule
+                    </span>
+                    <h4 class="h4 tac mb-4">20 分鐘即可取件</h4>
+                    <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
+                </li>
+                <li class="col-4 px-12">
+                    <span class="material-symbols-outlined icon-100 tac ptb-24">
+                        favorite
+                    </span>
+                    <h4 class="h4 tac mb-4">安心售後服務</h4>
+                    <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+                </li>
+                <li class="col-4 px-12">
+                    <span class="material-symbols-outlined icon-100 tac ptb-24">
+                        voicemail
+                    </span>
+                    <h4 class="h4 tac mb-4">關於鏡片</h4>
+                    <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+                </li>
+            </ul>
+        </div>
+    </div><!--service-->
+    <div class="classic container ptb-80">
+        <h3 class="h3 tac mb-48">經典系列鏡框</h3>
+        <ul class="classic-product row">
+            <li class="col-4 px-12">
+                <a class="hover-op" href="#">
+                    <img class="mb-8" src="https://github.com/icephy/2023_W3_glasses/blob/main/img/home-section3-1.png?raw=true" alt="classic-01">
+                </a>
+                <h5 class="tac"><a class="italic-t" href="#">OPTICAL</a></h5> 
+            </li>
+            <li class="col-4 px-12">
+                <a class="hover-op" href="#">
+                    <img class="mb-8" src="https://github.com/icephy/2023_W3_glasses/blob/main/img/home-section3-2.png?raw=true" alt="classic-01">
+                </a>
+                <h5 class="tac"><a class="italic-t" href="#">SUNGLASSES</a></h5> 
+            </li>
+            <li class="col-4 px-12">
+                <a class="hover-op" href="#">
+                    <img class="mb-8" src="https://github.com/icephy/2023_W3_glasses/blob/main/img/home-section3-3.png?raw=true" alt="classic-01">
+                </a>
+                <h5 class="tac"><a class="italic-t" href="#">FUNCTIONAL</a></h5> 
+            </li>
+        </ul>
+    </div><!--classic-->
+    <div class="full-bg ptb-80">
+        <div class="container">
+            <h3 class="h3 t-wh tac mb-48">聯名設計鏡框</h3>
+            <ul class="special-series d-flex jcsb aic">
+                <li class="col-6">
+                    <a href="#" class="hover-op"><img class="series-1-bg-desktop" src="https://github.com/icephy/2023_W3_glasses/blob/main/img/home-section4-1.png?raw=true" alt="series-DOUBLE A+"></a>
+                    <a href="#" class="hover-op"><img class="series-1-bg-mobile" src="https://github.com/icephy/2023_W3_glasses/blob/main/img/home-section4-1-sm.png?raw=true" alt="series-DOUBLE A+"></a>
+                    <a href="#" class="italic-t hover-bg-wh-to-bk tac">DOUBLE A+</a>
+                </li>
+                <li class="col-6">
+                    <a href="#" class="hover-op"><img class="series-1-bg-desktop" src="https://github.com/icephy/2023_W3_glasses/blob/main/img/home-section4-2.png?raw=true" alt="series-YOUTH"></a>
+                    <a href="#" class="hover-op"><img class="series-1-bg-mobile" src="https://github.com/icephy/2023_W3_glasses/blob/main/img/home-section4-2-sm.png?raw=true" alt="series-YOUTH"></a>
+                    <a href="#" class="italic-t hover-bg-wh-to-bk tac">YOUTH</a>
+                </li>
+            </ul>
+        </div>
+    </div><!-- 聯名區塊 -->
+    <div class="container ptb-80">
+        <h3 class="h3 tac mb-48">顧客推薦</h3>
+        <ul class="feedback d-flex jcsb row">
+            <li class="col-3 br-gary rd-b-rltb sd-bk-op-80">
+                <a href="#" class="hover-op"><img src="https://github.com/icephy/2023_W3_glasses/blob/main/img/home-section5-1.png?raw=true" alt="feedback-01"></a>
+                <div class="d-flex fxdc jcsb p-16">
+                    <p class="mb-8">Jessy</p>
+                    <p class="mb-48">眼鏡品質優良，下次還會想來這邊購買！</p>
+                    <p class="fb-date">2021/06/20</p>
+                </div>
+            </li>
+            <li class="col-3 br-gary rd-b-rltb sd-bk-op-80">
+                <a href="#" class="hover-op"><img src="https://github.com/icephy/2023_W3_glasses/blob/main/img/home-section5-2.png?raw=true" alt="feedback-02"></a>
+                <div class="d-flex fxdc jcsb p-16">
+                    <p class="mb-8">凱倫</p>
+                    <p class="mb-48">做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+                    <p class="fb-date">2021/04/18</p>
+                </div>
+            </li>
+            <li class="col-3 br-gary rd-b-rltb sd-bk-op-80">
+                <a href="#" class="hover-op"><img src="https://github.com/icephy/2023_W3_glasses/blob/main/img/home-section5-3.png?raw=true" alt="feedback-03"></a>
+                <div class="d-flex fxdc jcsb p-16">
+                    <p class="mb-8">悠悠</p>
+                    <p class="mb-48">謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+                    <p class="fb-date">2020/12/25</p>
+                </div>
+            </li>
+            <li class="col-3 br-gary rd-b-rltb sd-bk-op-80">
+                <a href="#" class="hover-op"><img src="https://github.com/icephy/2023_W3_glasses/blob/main/img/home-section5-4.png?raw=true" alt="feedback-04"></a>
+                <div class="d-flex fxdc jcsb p-16 rd-b-rl">
+                    <p class="mb-8">Kyuan</p>
+                    <p class="mb-48">服務很好，品質沒有任何問題，非常喜歡。</p>
+                    <p class="fb-date">2020/10/31</p>
+                </div>
+            </li>
+        </ul>
+    </div><!-- 顧客推薦區塊 -->
+    <div class="contact ptb-80">
+        <div class="container">
+            <h3 class="h3 tac mb-48">聯絡我們</h3>
+            <p class="mb-24">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+            <form class="contact-form mb-48" action="index.html" method="post">
+                <div class="mb-8">
+                    <label for="name" class="w-100">姓名</label>
+                </div>
+                <div class="mb-16">
+                    <input type="text" id="name" placeholder="陳小明" name="name" class="w-100 ptb-6 plr-12">
+                </div>
+                <div class="mb-8">
+                    <label for="tel" class="w-100">聯絡電話</label>
+                </div>
+                <div class="mb-16">
+                    <input type="tel" id="tel" placeholder="0912-345-678" name="tel" class="w-100 ptb-6 plr-12">
+                </div>
+                <div class="mb-8">
+                    <label for="email" class="w-100">電子郵件</label>
+                </div>
+                <div class="mb-16">
+                    <input type="email" id="email" placeholder="example@gmail.com" name="email" class="w-100 ptb-6 plr-12">
+                </div>
+                <div class="mb-8">
+                    <label for="suggestion" class="w-100">意見反應</label>
+                </div>
+                <div class="mb-16">
+                    <textarea name="suggestion" id="suggestion" rows="8" placeholder="請輸入您的意見" class="w-100 ptb-6 plr-12"></textarea>
+                </div>
+                <div class="d-flex aibl mb-16">
+                    <input type="checkbox" id="agreement" name="agreement">
+                    <label for="agreement">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+                </div>
+            </form>
+            <!-- <div class="btn-xl">
+                <a href="#" class="btn-xl-primary tac">確認送出</a>
+            </div> --><!-- 用 div 做的表單送出按鈕 -->
+            <div class="btn-xl">
+                <input type="submit" value="確認送出" class="btn-submit w-100">
+            </div>
+        </div><!-- container -->
+    </div><!-- contact -->
     <%- include('./layout/footer'); -%>
-
     <script type="module" src="../main.js"></script>
   </body>
 </html>
