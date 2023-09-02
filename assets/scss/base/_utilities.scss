@@ -1,4 +1,8 @@
 // Utilities 間距
+.p-12{
+    padding: 12px;
+}
+
 .p-16{
     padding: 16px;
 }
@@ -23,12 +27,20 @@
     padding-right: 12px;
 }
 
+.pt-24{
+    padding-top: 24px;
+}
+
 .pt-48{
     padding-top: 48px;
 } 
 
 .pt-32{
     padding-top: 32px;
+}
+
+.pb-16{
+    padding-bottom: 16px;
 }
 
 .pb-32{
@@ -72,8 +84,20 @@
     margin-bottom: 24px;
 }
 
+.mb-32{
+    margin-bottom: 32px;
+}
+
 .mb-48{
     margin-bottom: 48px;
+}
+
+.mb-80{
+    margin-bottom: 80px;
+}
+
+.gap-8{
+    gap: 8px;
 }
 
 .gap-16{

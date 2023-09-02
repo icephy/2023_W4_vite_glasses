@@ -3,14 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>測試</title>
+    <title>W4-Vite-眼鏡形象-OPTICAL</title>
+    <!-- Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-    <ul>
-        <li><a href="">aaaa</a></li>
-        <li><a href="">aaaa</a></li>
-        <li><a href="">aaaa</a></li>
+    <%- include('./layout/header'); -%>
+    <nav class="product-nav">
+    <div class="container">    
+        <ul class="d-flex tac">
+            <li class="w-33"><a class="tab-hover pt-24 pb-16" href="#">OPTICAL</a></li>
+            <li class="w-33"><a class="tab-hover pt-24 pb-16" href="#">SUNGLASSES</a></li>
+            <li class="w-33"><a class="tab-hover pt-24 pb-16" href="#">FUNCTIONAL</a></li>
+        </ul>
+    </div>
+    </nav>
+    <ul class="d-flex">
+        <li class="w-50 pc-product-ad-01">
+            <a href="#" class="hover-op">
+                <img src="../assets/images/product-header-1.png" alt="ad-01-pc">
+            </a>
+        </li>
+        <li class="w-50 mb-product-ad-01">
+            <a href="#" class="hover-op">
+                <img class="mb-w-100" src="../assets/images/product-header-sm-1.png" alt="ad-01-mobile">
+            </a>
+        </li>
+        <li class="w-50 pc-product-ad-02">
+            <a href="#" class="hover-op">
+                <img src="../assets/images/product-header-2.png" alt="ad-02-pc">
+            </a>
+        </li>
+        <li class="w-50 mb-product-ad-02">
+            <a href="#" class="hover-op">
+                <img class="mb-w-100" src="../assets/images/product-header-sm-2.png" alt="ad-02-mobile">
+            </a>
+        </li>
     </ul>
+    <div class="container ptb-80">
+        <p class="page-title tac">Celluloid Combi</p>
+        <p class="page-subtitle tac mb-32">賽璐珞鈦金屬混合鏡框</p>
+        <ul class="product-box d-flex jcsb aic">
+            <li class="col-3 px-12 mb-80">
+                <a href="#" class="hover-op"><img src="../assets/images/product-1.png" alt="product-1"></a>
+                <div class="d-flex jcsb">
+                    <p class="product-number">BJ41600S</p>
+                    <p class="product-price">NTD3,490</p>
+                </div>
+                <ul class="d-flex gap-8">
+                    <li class=""><a href="#" class="product-color hover-op p-12"></a></li>
+                    <li class=""><a href="#" class="product-color hover-op  p-12"></a></li>
+                </ul>
+            </li>
+            <li class="col-3 px-12 mb-80">
+                <a href="" class="hover-op"><img src="../assets/images/product-2.png" alt="product-2"></a>
+                <div class="d-flex jcsb">
+                    <p class="product-number">BJ41600S</p>
+                    <p class="product-price">NTD3,490</p>
+                </div>
+                <ul class="d-flex gap-8">
+                    <li class=""><a href="#" class="product-color hover-op p-12"></a></li>
+                    <li class=""><a href="#" class="product-color hover-op  p-12"></a></li>
+                </ul>
+            </li>
+            <li class="col-3 px-12 mb-80">
+                <a href="#" class="hover-op"><img src="../assets/images/product-3.png" alt="product-3"></a>
+                <div class="d-flex jcsb">
+                    <p class="product-number">BJ41600S</p>
+                    <p class="product-price">NTD3,490</p>
+                </div>
+                <ul class="d-flex gap-8">
+                    <li class=""><a href="#" class="product-color hover-op p-12"></a></li>
+                    <li class=""><a href="#" class="product-color hover-op  p-12"></a></li>
+                </ul>
+            </li>
+            <li class="col-3 px-12 mb-80">
+                <a href="#" class="hover-op"><img src="../assets/images/product-4.png" alt="product-4"></a>
+                <div class="d-flex jcsb">
+                    <p class="product-number">BJ41600S</p>
+                    <p class="product-price">NTD3,490</p>
+                </div>
+                <ul class="d-flex gap-8">
+                    <li class=""><a href="#" class="product-color hover-op p-12"></a></li>
+                    <li class=""><a href="#" class="product-color hover-op  p-12"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
 </body>
 </html>

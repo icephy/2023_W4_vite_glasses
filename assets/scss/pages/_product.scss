@@ -1,4 +1,125 @@
 .tab-hover{
-    background-color: $neutral-gary-wh;
+    font-family: $roboto;
+    font-size: $text-m-2;
+    font-weight: 500;
+    color: $neutral-gary-bk;
+    border-bottom: 8px solid $neutral-gary-wh;
+    outline: 1px solid $neutral-gary-lh;
+    &:hover{
+        border-bottom: 8px solid $tertiary;
+        color: $primary;
+        background-color: $tertiary;
+        transition:  ease-in-out 0.1s;
+    }
+    &:focus{
+        border-bottom: 8px solid $primary;
+        color: $neutral-gary-bk;
+        background-color: $neutral-gary-wh;
+        transition:  ease-in-out 0.1s;
+    }   
+}
+
+// banner
+
+.mb-product-ad-01, .mb-product-ad-02{
+    display: none;
+}
+
+// product list
+
+.product-box{
+    flex-wrap: wrap;
+}
+
+.page-title{
+    font-family: $roboto;
+    font-size: $text-lg-2;
+    font-weight: 500;
+}
+
+.page-subtitle{
+    font-family: $roboto;
+    font-size: $text-m-2;
+}
+
+.product-number{
+    font-family: $roboto;
+    font-size: $text-m;
+}
+
+.product-price{
+    font-family: $roboto;
+    font-size: $text-m;
+    font-weight: 500;
     color: $primary;
+}
+
+.product-color{
+    background-color: #5F3E2D;
+    border-radius: 4px;
+    &:focus{
+        outline: 2px solid $neutral-gary-bk;
+    }
+}
+
+// Tablet 平板
+
+@media (max-width: 992px){
+    .product-nav{
+        .tab-hover{
+            font-size: $text-xs;
+        }
+        .pt-24{
+            padding-top: 16px;
+        }
+
+        .pb-16{
+            padding-bottom: 8px;
+        }
+
+        .container{
+            max-width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .pc-product-ad-01, .pc-product-ad-02{
+        display: none;
+    }
+
+    .mb-product-ad-01, .mb-product-ad-02{
+        display: block;
+    }
+
+    .product-box{
+        .col-3{
+            width: 50%;
+        }
+    }
+
+
+
+
+
+
+}
+
+
+@media (max-width: 767px){
+
+    .tab-hover{
+        font-size: 1rem;
+    }
+
+    .product-box{
+        .col-3{
+            width: 100%;
+        }
+
+        .mb-80{
+            margin-bottom: 24px;
+        }
+    }
+
 }
