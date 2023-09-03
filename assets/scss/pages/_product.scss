@@ -3,20 +3,25 @@
     font-size: $text-m-2;
     font-weight: 500;
     color: $neutral-gary-bk;
-    border-bottom: 8px solid $neutral-gary-wh;
-    outline: 1px solid $neutral-gary-lh;
+    border-width: 1px 1px 8px 1px;
+    border-style: solid;
+    border-color: $neutral-gary-lh $neutral-gary-lh $neutral-gary-wh $neutral-gary-lh;
     &:hover{
         border-bottom: 8px solid $tertiary;
         color: $primary;
         background-color: $tertiary;
         transition:  ease-in-out 0.1s;
     }
-    &:focus{
-        border-bottom: 8px solid $primary;
-        color: $neutral-gary-bk;
-        background-color: $neutral-gary-wh;
-        transition:  ease-in-out 0.1s;
-    }   
+    // &:focus{
+    //     border-bottom: 8px solid $primary;
+    //     color: $neutral-gary-bk;
+    //     background-color: $neutral-gary-wh;
+    //     transition:  ease-in-out 0.1s;
+    // }   
+}
+
+.tab-active{
+    border-bottom: 8px solid $primary;
 }
 
 // banner
@@ -38,7 +43,6 @@
 }
 
 .page-subtitle{
-    font-family: $roboto;
     font-size: $text-m-2;
 }
 
@@ -64,6 +68,37 @@
 
 .brown{
     background-color: #B75929;
+}
+
+.pagination{
+    margin: 0 auto;
+}
+
+.pg-prev, .pg-next{
+    font-family: $roboto;
+    font-size: 19px;
+    color: $neutral-gary-gr;
+    padding: 11px 12px;
+    border: 1px solid $neutral-gary-gr;
+    &:hover{
+        background-color: $neutral-gary-lher;
+    }
+}
+
+.hover-bk{
+    padding: 12px 16px;
+    font-family: $roboto;
+    color: $neutral-gary-gr;
+    font-size: 18px;
+    border: 1px solid $neutral-gary-gr;
+    &:hover{
+        color: $neutral-gary-wh;
+        background-color: $neutral-gary-bk;
+    }
+    &:focus{
+        color: $neutral-gary-wh;
+        background-color: $neutral-gary-bk;
+    }
 }
 
 // Tablet 平板
@@ -109,6 +144,7 @@
 
 }
 
+// Mobile 
 
 @media (max-width: 767px){
 
@@ -124,6 +160,10 @@
         .mb-80{
             margin-bottom: 24px;
         }
+    }
+
+    .page-title, .page-subtitle{
+        font-size: $text-m;
     }
 
 }
