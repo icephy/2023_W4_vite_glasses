@@ -1,11 +1,17 @@
+.product-nav{
+    .w-33{
+        border-left: 1px solid $neutral-gary-lh;
+        border-right: 1px solid $neutral-gary-lh;
+        // border 要寫在父層的 li 上，才不會被 .tab-hover 的 border-bottom 8px 給擋住，但是要另外建立 class 還是寫在 .w-33 上呢？
+    }
+}
+
 .tab-hover{
     font-family: $roboto;
     font-size: $text-m-2;
     font-weight: 500;
     color: $neutral-gary-bk;
-    border-width: 1px 1px 8px 1px;
-    border-style: solid;
-    border-color: $neutral-gary-lh $neutral-gary-lh $neutral-gary-wh $neutral-gary-lh;
+    border-bottom: 8px solid $neutral-gary-wh;
     &:hover{
         border-bottom: 8px solid $tertiary;
         color: $primary;
@@ -70,27 +76,30 @@
     background-color: #B75929;
 }
 
-.pagination{
-    margin: 0 auto;
-}
+// .pagination{
+//     border: 1px solid $neutral-gary-gr;
+// }
 
-.pg-prev, .pg-next{
+.pg-pn-hover{
     font-family: $roboto;
-    font-size: 19px;
+    font-size: 18px;
     color: $neutral-gary-gr;
-    padding: 11px 12px;
-    border: 1px solid $neutral-gary-gr;
+    padding: 12px 12px;
+    // 更改了上下的 padding，原本 padding-top 是 11px，如果不更改會跟旁邊的頁面 1.2.3.按鈕有 1px 的高度落差，並且字級設計稿上是 19px，改成 18px。
     &:hover{
         background-color: $neutral-gary-lher;
     }
 }
+
+// .pg-prev, .pg-next{
+//     border: 1px solid $neutral-gary-gr;
+// }
 
 .hover-bk{
     padding: 12px 16px;
     font-family: $roboto;
     color: $neutral-gary-gr;
     font-size: 18px;
-    border: 1px solid $neutral-gary-gr;
     &:hover{
         color: $neutral-gary-wh;
         background-color: $neutral-gary-bk;
@@ -100,6 +109,33 @@
         background-color: $neutral-gary-bk;
     }
 }
+
+.pg-li{
+    border-width: 1px 1px 1px 0px;
+    border-color: $neutral-gary-gr;
+    border-style: solid;
+}
+
+.pg-li:nth-child(1){
+    border-left: 1px solid $neutral-gary-gr;
+    // 上一頁按鈕的 border
+}
+
+.pg-li:nth-child(7){
+    border-left: 1px solid $neutral-gary-gr;
+    // 下一頁按鈕的 border
+}
+
+.pg-li:nth-child(6){
+    border-right: 0px solid $neutral-gary-gr;
+    font-size: 60px;
+}
+
+.pagination-box{
+    padding-top: 0;
+}
+
+
 
 // Tablet 平板
 
@@ -134,19 +170,19 @@
     .product-box{
         .col-3{
             width: 50%;
+            margin-bottom: 40px;
+            }    
         }
     }
 
 
-
-
-
-
-}
-
 // Mobile 
 
 @media (max-width: 767px){
+
+    .main{
+        padding-top: 40px;
+    }
 
     .tab-hover{
         font-size: 1rem;
@@ -166,4 +202,39 @@
         font-size: $text-m;
     }
 
+    .product-box{
+        .col-3:last-child{
+        margin-bottom: 0px;
+        }  
+    }
+
+    .pg-pn-hover{
+        font-size: $text-xs;
+        padding: 12px 11px;
+    }
+
+    .hover-bk{
+        font-size: $text-xs;
+        padding: 12px 15px;
+    }
+
+    .pagination-box{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+}
+
+// Mobile 360*740
+
+@media (max-width: 360px){
+    .pg-pn-hover{
+        font-size: $text-xs;
+        padding: 12px 10px;
+    }
+
+    .hover-bk{
+        font-size: $text-xs;
+        padding: 12px 12px;
+    }
 }
